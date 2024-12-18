@@ -5,7 +5,7 @@ export default function Header() {
     <div className="container mx-auto max-w-[1200px] px-3 relative lg:absolute left-0 right-0">
       <div className="flex justify-between py-5 items-center">
         <div
-          className="text-gradient font-secondary"
+          className="text-gradient font-primary"
           data-aos="fade-right"
           data-aos-easing="ease-in-sine"
           data-aos-duration="500"
