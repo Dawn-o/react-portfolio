@@ -24,7 +24,7 @@ export default function Banner() {
             />
           </div>
         </div>
-        <div className="max-w-[750px] mx-10 lg:mx-auto mt-5 text-justify">
+        <div className="max-w-[750px] mx-10 lg:mx-auto mt-5 text-justify font-primary text-lg">
           I am an 11th-grade student at Telkom Schools Banjarbaru Vocational
           School, majoring in Software Engineering. I have a great interest in
           Back End Development and want to continue to deepen my knowledge in
