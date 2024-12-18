@@ -9,18 +9,18 @@ export default function Portfolio() {
           data-aos="fade-down"
         >
           <div className="order-2 lg:order-1 mt-5">
-            <h4 className="text-secondary font-secondary text-[24px]">
+            <h4 className="text-secondary font-secondary text-3xl">
               Recent Work
             </h4>
-            <div className="text-gradient font-primary max-w-[700px] mx-auto text-[24px]">
+            <div className="text-gradient font-primary max-w-[700px] mx-auto text-xl">
               projects that I have created and worked on so far
             </div>
           </div>
           <div className="order-1 lg:order-2 text-center">
-            <h2 className="text-gradient font-primary max-w-[700px] mx-auto text-[50px]">
+            <h2 className="text-gradient font-primary max-w-[700px] mx-auto text-5xl">
               04
             </h2>
-            <div className="">Completed Projects</div>
+            <div className="font-primary mt-2">Completed Projects</div>
           </div>
         </div>
         <div
