@@ -5,10 +5,6 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      primary: "Montserrat",
-      secondary: "Orbitron",
-    },
     extend: {
       colors: {
         primary: "#B809C3",
@@ -16,6 +12,10 @@ export default {
         third: "#FEF6C7",
         fourth: "#011eff",
       },
+    },
+    fontFamily: {
+      primary: ["Montserrat"],
+      secondary: ["Orbitron"],
     },
   },
   plugins: [],
