@@ -8,10 +8,10 @@ export default function Profile() {
           data-aos-duration="1000"
           data-aos="fade-right"
         >
-          <h4 className="text-secondary mb-3">Programming Language Skills</h4>
-          <h2 className="text-gradient font-primary max-w-[700px] mx-10 lg:mx-auto text-[24px] text-center lg:text-justify">
+          <h4 className="text-secondary mb-3 text-3xl">Programming Language Skills</h4>
+          <h2 className="text-gradient font-primary max-w-[700px] mx-10 lg:mx-auto text-xl text-center lg:text-justify">
             I have a great interest in Back End Development so I studied quite a
-            lot of programming languages ​​for the back end but I also learned a
+            lot of programming languages for the back end but I also learned a
             little design for the front end
           </h2>
         </div>
