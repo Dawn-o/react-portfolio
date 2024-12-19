@@ -3,13 +3,13 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Banner() {
   return (
-    <section>
-      <div
-        id="home"
-        className="section container mx-auto max-w-[1200px] px-3 items-center"
-      >
-        <div className="w-full" data-aos="zoom-in">
-          <div className="block text-center font-secondary font-black text-[30px]">
+    <section className="h-screen flex items-center justify-center">
+      <div className="container mx-auto max-w-[1200px] px-4 relative">
+        <div
+          className="flex flex-col items-center justify-center text-center"
+          data-aos="zoom-in"
+        >
+          <div className="font-secondary font-black text-[30px] mb-4">
             Hello, I am
             <div>
               <TypeAnimation
@@ -26,7 +26,8 @@ export default function Banner() {
               />
             </div>
           </div>
-          <div className="max-w-[750px] mx-10 lg:mx-auto mt-5 text-justify font-primary text-lg">
+
+          <div className="max-w-[750px] px-4 sm:px-6 mt-5 text-center sm:text-justify font-primary text-lg">
             I am an 11th-grade student at Telkom Schools Banjarbaru Vocational
             School, majoring in Software Engineering. I have a great interest in
             Back End Development and want to continue to deepen my knowledge in
