@@ -6,8 +6,8 @@ export default function Navigation() {
     <div
       className="fixed bottom-4 left-0 right-0 text-center z-10 lg:translate-y-[-50%] lg:top-[50%] lg:left-auto lg:right-5"
       data-aos-easing="linear"
-      data-aos-duration="1000"
-      data-aos="fade-left"
+      data-aos-duration="400"
+      data-aos="fade-up"  
     >
       <div className="flex justify-between mx-auto bg-white text-secondary p-2 rounded-full border-secondary border-solid border-[1px] max-w-[200px] lg:flex-col">
         <Link
