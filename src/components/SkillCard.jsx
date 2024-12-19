@@ -1,11 +1,5 @@
 import PropTypes from "prop-types";
 
-SkillCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  level: PropTypes.string.isRequired,
-};
-
 export const SkillCard = ({ name, image, level }) => (
   <div className="w-full transform transition-all hover:scale-105">
     <div className="bg-white h-full justify-center items-center flex rounded-lg overflow-hidden relative p-5 group">
@@ -19,3 +13,9 @@ export const SkillCard = ({ name, image, level }) => (
     </div>
   </div>
 );
+
+SkillCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  level: PropTypes.string.isRequired,
+};
