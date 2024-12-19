@@ -28,11 +28,18 @@ const projects = [
   },
 ];
 
+const TechBadge = ({ tech }) => (
+  <span className="inline-block px-5 py-2 font-primary text-sm rounded-full bg-white/20 text-white hover:bg-secondary transition-colors duration-300">
+    {tech.trim()}
+  </span>
+);
+
 const ProjectCard = ({ title, image, tech }) => {
   const [isLoading, setIsLoading] = useState(true);
+  const techArray = tech.split(",").map((t) => t.trim());
 
   return (
-    <div className="w-full">
+    <div className="w-full cursor-pointer">
       <div className="bg-white h-full w-full justify-center items-center flex rounded-lg overflow-hidden p-5 relative group">
         <img
           src={image}
@@ -52,7 +59,11 @@ const ProjectCard = ({ title, image, tech }) => {
             <h4 className="text-xl font-bold font-secondary text-white mb-2">
               {title}
             </h4>
-            <div className="text-lg text-white/70 mb-6">{tech}</div>
+            <div className="flex flex-wrap justify-center gap-1 mb-6">
+              {techArray.map((t, index) => (
+                <TechBadge key={index} tech={t} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -65,6 +76,10 @@ ProjectCard.propTypes = {
   image: PropTypes.string.isRequired,
   tech: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+};
+
+TechBadge.propTypes = {
+  tech: PropTypes.string.isRequired,
 };
 
 export default function Portfolio() {
