@@ -25,15 +25,37 @@ export default function Header() {
           data-aos-duration="500"
           data-aos-delay="0"
         >
-          <a href="/">
-            <BsGithub />
-          </a>
-          <a href="/">
-            <BsLinkedin />
-          </a>
-          <a href="">
-            <BsEnvelopeFill />
-          </a>
+          <nav
+            className="flex items-center gap-6"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <a
+              href="https://github.com/yourusername"
+              className="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="GitHub"
+            >
+              <BsGithub size={22} />
+            </a>
+            <a
+              href="https://linkedin.com/in/yourusername"
+              className="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+            >
+              <BsLinkedin size={22} />
+            </a>
+            <a
+              href="mailto:your.email@example.com"
+              className="social-link"
+              title="Email"
+            >
+              <BsEnvelopeFill size={22} />
+            </a>
+          </nav>
         </div>
       </div>
     </div>
