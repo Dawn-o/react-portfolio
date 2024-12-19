@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsEnvelopeFill } from "react-icons/bs";
 
 export default function Header() {
   return (
@@ -12,7 +12,9 @@ export default function Header() {
           data-aos-delay="0"
         >
           <a href="/">
-            <h1 className="text-[30px] leading-none font-bold">MUHAMMAD RUSHELASLI</h1>
+            <h1 className="text-[30px] leading-none font-bold">
+              MUHAMMAD RUSHELASLI
+            </h1>
             <h4 className="font-normal leading-none">SOFTWARE ENGINEERING</h4>
           </a>
         </div>
@@ -28,6 +30,9 @@ export default function Header() {
           </a>
           <a href="/">
             <BsLinkedin />
+          </a>
+          <a href="">
+            <BsEnvelopeFill />
           </a>
         </div>
       </div>
