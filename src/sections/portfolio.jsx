@@ -29,37 +29,40 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="section" aria-label="Portfolio">
-      <div className="container mx-auto max-w-[1200px] px-3 pt-3 pb-20">
+    <section id="portfolio" className="section py-20">
+      <div className="container mx-auto max-w-[1200px] px-4">
         <div
-          className="flex flex-col lg:align-center lg:flex-row justify-between mb-[50px]"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
+          className="text-center mb-12"
+          data-aos="fade-up"
+          data-aos-delay="400"
         >
-          <div className="order-2 lg:order-1 mt-5">
-            <h2 className="text-secondary font-secondary text-3xl">
-              Recent Work
-            </h2>
-            <p className="text-gradient font-primary max-w-[700px] mx-auto text-xl">
-              Projects that I have created and worked on so far
-            </p>
-          </div>
-          <div className="order-1 lg:order-2 text-center">
-            <span className="text-gradient font-primary max-w-[700px] mx-auto text-5xl">
-              04
-            </span>
-            <p className="font-primary mt-2">Completed Projects</p>
-          </div>
+          <h2 className="text-4xl font-bold font-secondary text-gradient mb-4">
+            Featured Projects
+          </h2>
+          <p className="text-xl font-primary font-medium max-w-2xl mx-auto">
+            A showcase of my technical projects and contributions
+          </p>
         </div>
+
         <div
           className="grid grid-cols-1 lg:grid-cols-2 gap-4"
           data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos-delay="600"
         >
           {projects.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}
+        </div>
+
+        <div
+          className="text-center mt-12"
+          data-aos="fade-up"
+          data-aos-delay="800"
+        >
+          <span className="text-gradient text-5xl font-primary">
+            0{projects.length}
+          </span>
+          <p className="font-primary font-medium mt-2">Completed Projects</p>
         </div>
       </div>
     </section>
