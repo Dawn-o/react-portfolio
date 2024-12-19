@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="my-16">
+    <footer className="my-16" data-aos="fade-up" data-aos-delay="200">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center gap-4">
           <div className="flex gap-4">
