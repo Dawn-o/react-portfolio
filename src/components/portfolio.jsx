@@ -47,12 +47,12 @@ const ProjectCard = ({ title, image, tech }) => {
             Loading...
           </div>
         )}
-        <div className="absolute p-5 bg-primary w-full h-full flex items-center opacity-0 group-hover:opacity-100 transition">
-          <div className="text-center w-full text-white mt-[-60px] group-hover:mt-0 transition-all">
-            <div className="bg-white rounded-full px-5 py-2 inline-block mb-2">
-              <h4 className="text-gradient font-secondary">{title}</h4>
-            </div>
-            <p className="font-primary">{tech}</p>
+        <div className="absolute inset-0 bg-primary/90 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+          <div className="p-6 text-center">
+            <h4 className="text-xl font-bold font-secondary text-white mb-2">
+              {title}
+            </h4>
+            <div className="text-lg text-white/70 mb-6">{tech}</div>
           </div>
         </div>
       </div>
@@ -94,10 +94,8 @@ export default function Portfolio() {
         </div>
         <div
           className="grid grid-cols-1 lg:grid-cols-2 gap-4"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
-          data-aos-delay="100"
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           {projects.map((project) => (
             <ProjectCard key={project.id} {...project} />
