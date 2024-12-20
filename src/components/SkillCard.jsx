@@ -20,7 +20,7 @@ export const SkillCard = ({ name, image, level }) => {
                 style={{ width: levelPercentage[level] }}
               />
             </div>
-            <p className="text-sm mt-2 font-medium">{level}</p>
+            <p className="text-sm mt-2 font-primary font-medium">{level}</p>
           </div>
         </div>
       </div>
