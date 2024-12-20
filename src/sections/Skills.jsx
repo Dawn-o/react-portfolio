@@ -77,7 +77,7 @@ const skills = [
   },
 ];
 
-export default function Profile() {
+export default function Skills() {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const categories = [
@@ -93,7 +93,7 @@ export default function Profile() {
         );
 
   return (
-    <section id="profile" className="section py-20">
+    <section id="skills" className="section py-20">
       <div className="container mx-auto max-w-[1200px] px-4">
         <div
           className="text-center mb-16"

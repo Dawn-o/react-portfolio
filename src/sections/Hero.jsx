@@ -1,9 +1,9 @@
 import { BsArrowDown } from "react-icons/bs";
 import { TypeAnimation } from "react-type-animation";
 
-export default function Banner() {
+export default function Hero() {
   return (
-    <section id="home" className="h-screen flex items-center justify-center">
+    <section id="hero" className="h-screen flex items-center justify-center">
       <div className="container mx-auto max-w-[1200px] px-4 relative">
         <div
           className="flex flex-col items-center justify-center text-center"

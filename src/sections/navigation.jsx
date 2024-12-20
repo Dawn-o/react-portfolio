@@ -12,7 +12,7 @@ export default function Navigation() {
       <div className="flex justify-between mx-auto bg-white text-secondary p-2 rounded-full border-secondary border-solid border-[1px] max-w-[200px] lg:flex-col">
         <Link
           className="flex w-[50px] h-[50px] justify-center items-center cursor-pointer"
-          to="home"
+          to="hero"
           activeClass="active"
           offset={100}
           smooth={true}
@@ -22,7 +22,7 @@ export default function Navigation() {
         </Link>
         <Link
           className="flex w-[50px] h-[50px] justify-center items-center cursor-pointer"
-          to="profile"
+          to="skills"
           activeClass="active"
           offset={100}
           smooth={true}
@@ -32,7 +32,7 @@ export default function Navigation() {
         </Link>
         <Link
           className="flex w-[50px] h-[50px] justify-center items-center cursor-pointer"
-          to="portfolio"
+          to="projects"
           activeClass="active"
           offset={100}
           smooth={true}

@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Header from "./sections/header";
-import Navigation from "./sections/navigation";
-import Banner from "./sections/banner";
-import Profile from "./sections/profile";
-import Portfolio from "./sections/portfolio";
-import Footer from "./sections/footer";
+import Header from "./sections/Header";
+import Navigation from "./sections/Navigation";
+import Hero from "./sections/Hero";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Footer from "./sections/Footer";
 
 function App() {
   useEffect(() => {
@@ -17,9 +17,9 @@ function App() {
     <div>
       <Header />
       <Navigation />
-      <Banner />
-      <Profile />
-      <Portfolio />
+      <Hero />
+      <Skills />
+      <Projects />
       <Footer />
     </div>
   );
