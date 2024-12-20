@@ -9,7 +9,7 @@ export const SkillCard = ({ name, image, level, index }) => {
 
   return (
     <div 
-      className="w-full transform transition-all hover:scale-105"
+      className="w-full transform transition-all hover:scale-105 cursor-pointer"
       data-aos="zoom-in"
       data-aos-delay={index * 100}
       data-aos-duration="800"
