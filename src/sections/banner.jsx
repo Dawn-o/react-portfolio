@@ -15,9 +15,11 @@ export default function Banner() {
               <TypeAnimation
                 sequence={[
                   "Telkom Schools Student",
-                  3000,
+                  2000,
                   "Backend Developer",
-                  3000,
+                  2000,
+                  "Tech Enthusiast",
+                  2000,
                 ]}
                 wrapper="span"
                 speed={50}
