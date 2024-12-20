@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Header from "./sections/Header";
-import Navigation from "./sections/Navigation";
+import Header from "./sections/header";
+import Navigation from "./sections/navigation";
 import Hero from "./sections/Hero";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
-import Footer from "./sections/Footer";
+import Footer from "./sections/footer";
 
 function App() {
   useEffect(() => {
