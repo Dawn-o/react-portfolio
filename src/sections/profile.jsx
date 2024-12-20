@@ -1,4 +1,7 @@
+import { useState } from "react";
 import { SkillCard } from "../components/SkillCard";
+import { motion, AnimatePresence } from 'framer-motion';
+
 const skills = [
   {
     name: "jQuery",
@@ -75,10 +78,18 @@ const skills = [
 ];
 
 export default function Profile() {
+  const [activeCategory, setActiveCategory] = useState('all');
+  
+  const categories = ['all', ...new Set(skills.map(skill => skill.category.toLowerCase()))];
+  
+  const filteredSkills = activeCategory === 'all' 
+    ? skills 
+    : skills.filter(skill => skill.category.toLowerCase() === activeCategory);
+
   return (
     <section id="profile" className="section py-20">
       <div className="container mx-auto max-w-[1200px] px-4">
-        <div
+           <div
           className="text-center mb-16"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -93,15 +104,50 @@ export default function Profile() {
           </p>
         </div>
 
-        <div
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 cursor-pointer"
-          data-aos="fade-up"
-          data-aos-delay="200"
+        <div className="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
+  {categories.map(category => (
+    <button
+      key={category}
+      onClick={() => setActiveCategory(category)}
+      className={`
+        px-6 py-2 rounded-full 
+        transition-all duration-300
+        backdrop-blur-sm
+        border border-white/10
+        hover:border-secondary/50
+        ${activeCategory === category 
+          ? 'bg-gradient-to-r from-secondary to-primary text-white scale-110 shadow-lg shadow-secondary/20' 
+          : 'bg-white/20 hover:bg-white/40'
+        }
+      `}
+    >
+      {category.charAt(0).toUpperCase() + category.slice(1)}
+      <span className="ml-2 text-sm">
+        ({category === 'all' ? skills.length : skills.filter(s => s.category.toLowerCase() === category).length})
+      </span>
+    </button>
+  ))}
+</div>
+
+        <motion.div 
+          layout
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
         >
-          {skills.map((skill) => (
-            <SkillCard key={skill.name} {...skill} />
-          ))}
-        </div>
+          <AnimatePresence>
+            {filteredSkills.map((skill) => (
+              <motion.div
+                key={skill.name}
+                layout
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.8 }}
+                transition={{ duration: 0.3 }}
+              >
+                <SkillCard {...skill} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
       </div>
     </section>
   );
