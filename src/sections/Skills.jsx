@@ -1,81 +1,9 @@
 import { useState } from "react";
 import { SkillCard } from "../components/SkillCard";
 import { motion, AnimatePresence } from "framer-motion";
+import skillsData from "../data/skills.json";
 
-const skills = [
-  {
-    name: "HTML",
-    image: "icons/html.png",
-    level: "Advanced",
-    category: "Frontend",
-  },
-  {
-    name: "CSS",
-    image: "icons/css.png",
-    level: "Advanced",
-    category: "Frontend",
-  },
-  {
-    name: "JavaScript",
-    image: "icons/javascript.png",
-    level: "Intermediate",
-    category: "Frontend",
-  },
-  {
-    name: "Bootstrap",
-    image: "icons/bootstrap.png",
-    level: "Advanced",
-    category: "Frontend",
-  },
-  {
-    name: "jQuery",
-    image: "icons/jquery.png",
-    level: "Intermediate",
-    category: "Frontend",
-  },
-  {
-    name: "Tailwind",
-    image: "icons/tailwind.png",
-    level: "Advanced",
-    category: "Frontend",
-  },
-  {
-    name: "PHP",
-    image: "icons/php.png",
-    level: "Advanced",
-    category: "Backend",
-  },
-  {
-    name: "Laravel",
-    image: "icons/laravel.png",
-    level: "Intermediate",
-    category: "Backend",
-  },
-  {
-    name: "Python",
-    image: "icons/python.png",
-    level: "Advanced",
-    category: "Backend",
-  },
-  {
-    name: "Django",
-    image: "icons/django.png",
-    level: "Intermediate",
-    category: "Backend",
-  },
-  {
-    name: "Dart",
-    image: "icons/dart.png",
-    level: "Intermediate",
-    category: "Mobile",
-  },
-  {
-    name: "Flutter",
-    image: "icons/flutter.png",
-    level: "Intermediate",
-    category: "Mobile",
-  },
-];
+const { skills } = skillsData;
 
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState("all");

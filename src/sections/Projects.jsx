@@ -1,31 +1,7 @@
 import { ProjectCard } from "../components/ProjectCard";
+import projectsData from "../data/projects.json";
 
-const projects = [
-  {
-    id: 1,
-    title: "Exceed | Guitar E-Commerce",
-    image: "images/portfolio1.png",
-    tech: "HTML, PHP, JavaScript & jQuery, Tailwind CSS",
-  },
-  {
-    id: 2,
-    title: "StoveGuard",
-    image: "images/portfolio2.png",
-    tech: "HTML, PHP, JavaScript & jQuery, Tailwind CSS",
-  },
-  {
-    id: 3,
-    title: "RSUD",
-    image: "images/portfolio3.png",
-    tech: "HTML, Python, Django, Tailwind CSS",
-  },
-  {
-    id: 4,
-    title: "SKALA",
-    image: "images/portfolio4.png",
-    tech: "HTML, PHP, JavaScript & jQuery, Laravel, Tailwind CSS",
-  },
-];
+const { projects } = projectsData;
 
 export default function Projects() {
   return (
