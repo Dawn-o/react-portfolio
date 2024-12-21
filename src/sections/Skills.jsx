@@ -93,17 +93,17 @@ export default function Skills() {
         );
 
   return (
-    <section id="skills" className="section">
-      <div className="container mx-auto max-w-[1200px] px-4">
+    <section id="skills" className="py-20 md:py-28">
+      <div className="container mx-auto max-w-[1200px] px-4 relative">
         <div
-          className="text-center mb-16"
+          className="text-center mb-12"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
           <h2 className="text-gradient font-secondary text-3xl font-bold mb-4">
             Programming Language Skills
           </h2>
-          <p className="font-primary font-medium text-lg max-w-2xl mx-auto">
+          <p className="font-primary font-medium text-lg max-w-2xl mx-auto px-4">
             Specialized in Backend Development with expertise in various
             programming languages and frameworks, while maintaining frontend
             development capabilities.
@@ -111,7 +111,7 @@ export default function Skills() {
         </div>
 
         <div
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-wrap justify-center gap-3 md:gap-4 mb-8 md:mb-12 px-2"
           data-aos="fade-up"
         >
           {categories.map((category) => (
@@ -147,7 +147,7 @@ export default function Skills() {
 
         <motion.div
           layout
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
         >
           <AnimatePresence>
             {filteredSkills.map((skill) => (

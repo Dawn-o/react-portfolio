@@ -27,9 +27,6 @@ body {
     #ff56f6 117.04%
   );
 }
-.section {
-  @apply py-8 lg:py-24 lg:h-screen flex items-center;
-}
 
 .social-link {
   @apply hover:text-primary transition-all duration-300 ease-in-out 
