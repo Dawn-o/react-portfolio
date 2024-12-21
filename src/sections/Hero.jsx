@@ -1,4 +1,4 @@
-import { BsArrowDown } from "react-icons/bs";
+import { ArrowDown } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
@@ -38,7 +38,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <BsArrowDown size={24} />
+        <ArrowDown size={24} />
       </div>
     </section>
   );
