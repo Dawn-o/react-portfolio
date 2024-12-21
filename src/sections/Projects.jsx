@@ -29,7 +29,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="section py-20">
+    <section id="projects" className="section">
       <div className="container mx-auto max-w-[1200px] px-4">
         <div
           className="text-center mb-12"

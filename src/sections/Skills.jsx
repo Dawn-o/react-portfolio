@@ -93,7 +93,7 @@ export default function Skills() {
         );
 
   return (
-    <section id="skills" className="section py-20">
+    <section id="skills" className="section">
       <div className="container mx-auto max-w-[1200px] px-4">
         <div
           className="text-center mb-16"
