@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { BiHomeAlt, BiUser, BiCodeAlt } from "react-icons/bi";
+import { Home, User, Code } from "lucide-react";
 
 export default function Navigation() {
   return (
@@ -7,7 +7,7 @@ export default function Navigation() {
       className="fixed bottom-4 left-0 right-0 text-center z-10 lg:translate-y-[-50%] lg:top-[50%] lg:left-auto lg:right-5"
       data-aos-easing="linear"
       data-aos-duration="400"
-      data-aos="fade-up"  
+      data-aos="fade-up"
     >
       <div className="flex justify-between mx-auto bg-white text-secondary p-2 rounded-full border-secondary border-solid border-[1px] max-w-[200px] lg:flex-col">
         <Link
@@ -18,7 +18,7 @@ export default function Navigation() {
           smooth={true}
           spy={true}
         >
-          <BiHomeAlt />
+          <Home size={18} />
         </Link>
         <Link
           className="flex w-[50px] h-[50px] justify-center items-center cursor-pointer"
@@ -28,7 +28,7 @@ export default function Navigation() {
           smooth={true}
           spy={true}
         >
-          <BiUser />
+          <User size={18} />
         </Link>
         <Link
           className="flex w-[50px] h-[50px] justify-center items-center cursor-pointer"
@@ -38,7 +38,7 @@ export default function Navigation() {
           smooth={true}
           spy={true}
         >
-          <BiCodeAlt />
+          <Code size={18} />
         </Link>
       </div>
     </div>
