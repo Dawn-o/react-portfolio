@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Header() {
   return (
-    <div className="container mx-auto max-w-[1200px] px-3 relative lg:absolute left-0 right-0">
+    <div className="container mx-auto max-w-[1200px] px-3 absolute left-0 right-0">
       <div className="flex justify-between py-5 items-center">
         <div
           className="text-gradient font-secondary"
