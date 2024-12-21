@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin, BsEnvelopeFill } from "react-icons/bs";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Header() {
   return (
@@ -31,29 +31,26 @@ export default function Header() {
             data-aos-duration="1000"
           >
             <a
-              href="https://github.com/yourusername"
-              className="social-link"
+              href="https://github.com/dawn-o"
               target="_blank"
               rel="noopener noreferrer"
-              title="GitHub"
+              className="text-gray-800 hover:text-gray-900 transition-colors"
             >
-              <BsGithub size={22} />
+              <Github size={22} />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
-              className="social-link"
+              href="https://linkedin.com/in/muhammad-rushelasli"
               target="_blank"
               rel="noopener noreferrer"
-              title="LinkedIn"
+              className="text-gray-800 hover:text-gray-900 transition-colors"
             >
-              <BsLinkedin size={22} />
+              <Linkedin size={22} />
             </a>
             <a
-              href="mailto:your.email@example.com"
-              className="social-link"
-              title="Email"
+              href="mailto:ruselaq@gmail.com"
+              className="text-gray-800 hover:text-gray-900 transition-colors"
             >
-              <BsEnvelopeFill size={22} />
+              <Mail size={22} />
             </a>
           </nav>
         </div>
