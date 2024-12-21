@@ -29,12 +29,10 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="max-w-[750px] px-4 sm:px-6 mt-5 text-center sm:text-justify font-primary text-lg">
-            I am an 11th-grade student at Telkom Schools Banjarbaru Vocational
-            School, majoring in Software Engineering. I have a great interest in
-            Back End Development and want to continue to deepen my knowledge in
-            this field. Additionally, I am a generalist team leader who strives
-            to build closeness among my members.
+          <div className="max-w-[750px] px-6 mt-5 text-center font-primary text-lg">
+            A passionate Software Engineering student at Telkom Schools
+            Banjarbaru, focusing on Backend Development and team leadership.
+            Building digital solutions that matter.
           </div>
         </div>
       </div>
