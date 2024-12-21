@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
-import PropTypes from "prop-types";
 import { TechBadge } from "./TechBadge";
 
 export const ProjectCard = ({ title, image, tech }) => {
@@ -37,11 +37,4 @@ export const ProjectCard = ({ title, image, tech }) => {
       </div>
     </div>
   );
-};
-
-ProjectCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  tech: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
 };

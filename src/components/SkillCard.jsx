@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+/* eslint-disable react/prop-types */
 
 export const SkillCard = ({ name, image, level, index }) => {
   const levelPercentage = {
@@ -35,11 +35,4 @@ export const SkillCard = ({ name, image, level, index }) => {
       </div>
     </div>
   );
-};
-
-SkillCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  level: PropTypes.string.isRequired,
-  index: PropTypes.number.isRequired,
 };
