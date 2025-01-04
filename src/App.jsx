@@ -7,6 +7,7 @@ import Hero from "./sections/Hero";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Footer from "./sections/footer";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
       <Skills />
       <Projects />
       <Footer />
+      <Analytics />
     </div>
   );
 }
